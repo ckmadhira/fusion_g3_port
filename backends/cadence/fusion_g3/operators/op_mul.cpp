@@ -78,6 +78,7 @@ Tensor& mul_out(
 
   bool optimized = 1;
 
+  /* Making both the input dimensions same */
   if ((a.dim() == 0) || (b.dim() == 0)) {
     optimized = 0;
   }
